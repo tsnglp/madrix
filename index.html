@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Madrix Test page</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="container border-special">
+      <h1>Madrix Demo</h1>
+      <p>This is the demo page to show that you can trigger Madrix plays within a LAN.</p>
+      <p>Make sure that you have created plays and saved in slots S1P1, S1P2, S1P3, S1P4 and S2P1.</p>
+    </header>
+    <main class="container">
+      <section class="border-special">
+        <section class="col-1-2">
+          <h2>Play from Deck A</h2>
+          <button class="btn" onclick="playLocation(1, 'S1P1')">Storage 1, Slot 1</button>
+          <button class="btn" onclick="playLocation(1, 'S1P2')">Storage 1, Slot 2</button>
+          <button class="btn" onclick="playLocation(1, 'S1P3')">Storage 1, Slot 3</button>
+          <button class="btn" onclick="playLocation(1, 'S1P4')">Storage 1, Slot 4</button>
+        </section><!--
+        --><section class="col-1-2">
+          <h2>Play from Deck B</h2>
+          <button class="btn" onclick="playLocation(2, 'S2P1')">Storage 2, Slot 1</button>
+          <button class="btn" onclick="playLocation(2, 'S2P2')">Storage 2, Slot 2</button>
+        </section>
+      </section>
+      <div class="link-special border-special"><a href="http://10.10.25.178/RemoteCommands/SetStorageDeckA=S1P3">Using A tag</a></div>
+      <div id="result"></div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
